@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CostumersController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\ProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +23,11 @@ use App\Http\Controllers\HomeController;
 });*/
 
 Route::get('/',[HomeController::class,'index'])->name('home');
+
+Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+
+Route::get('/orders',[OrdersController::class,'index'])->name('orders');
+
+Route::get('/products',[ProductsController::class,'index'])->name('products');
+
+Route::get('/customers',[CostumersController::class,'index'])->name('customers');

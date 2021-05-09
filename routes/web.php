@@ -30,4 +30,8 @@ Route::get('/orders',[OrdersController::class,'index'])->name('orders');
 
 Route::get('/products',[ProductsController::class,'index'])->name('products');
 
+Route::post('/products',[ProductsController::class,'index'])->name('products');
+
 Route::get('/customers',[CostumersController::class,'index'])->name('customers');
+
+Route::post('/customers',[CostumersController::class,'index'])->name('customers');

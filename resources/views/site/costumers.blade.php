@@ -21,7 +21,7 @@
 
 <hr>
 <label>Nome: {{$nome}}</label><br>
-<label>Emil: {{$email}}</label><br>
+<label>Email: {{$email}}</label><br>
 <label>Cidade: {{$cidade}}</label><br>
 
 </div>
